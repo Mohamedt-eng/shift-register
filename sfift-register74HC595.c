@@ -56,19 +56,7 @@ void func_green(){
 
   }
 }
-int counter =0;
-/*void InitTimer0(){
-  OPTION_REG         = 0x87;
-  TMR0                 = 22;
-  INTCON         = 0xA0;
-}*/
-
 void Interrupt() {
-             /*if (TMR0IF_bit){
-             TMR0IF_bit         = 0;
-             TMR0*/                = 22;
-             //counter ++;
-
          }
          if (INTCON.RBIF) {
               if(PORTB.B4==0){            //Button RB4
